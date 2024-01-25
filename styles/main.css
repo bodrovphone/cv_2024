@@ -62,6 +62,15 @@ li {
     gap: 2em;
 }
 
+#wrapper--hero a {
+    color: var(--secondaryTextColor);
+    transition: color .3s;
+}
+
+#wrapper--hero a:hover {
+    color: var(--mainLinkColor-dark);
+}
+
 #username {
     font-size: 2em;
 }
@@ -99,6 +108,17 @@ li {
 
 #qualifications--list {
    list-style: none;
+}
+
+#qualifications--list li {
+    color: var(--mainTextColor);
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+#qualifications--list li span {
+    font-weight: normal;
+    color: var(--secondaryTextColor);
 }
 
 #wrapper--stack__items {
