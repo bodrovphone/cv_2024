@@ -96,13 +96,13 @@ li {
     column-gap: normal;
 }
 
-#social--list a {
+#social--list a, .card--work-history a {
     font-size: .9em;
     color: var(--secondaryTextColor);
     transition: color .4s;
 }
 
-#social--list a:hover {
+#social--list a:hover, .card--work-history a:hover {
     color: var(--mainLinkColor);
 }
 
@@ -183,5 +183,18 @@ li {
     .card--work-history {
         border-left: none;
         padding-left: 0;
+    }
+}
+
+@media print {
+    #qualifications--list {
+        font-size: .8em;
+    }
+    #social--list {
+        display: none;
+    }
+    .section--page {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
