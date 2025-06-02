@@ -1,356 +1,480 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Oleksandr Bodrov</title>
-    <link type="text/css" rel="stylesheet" href="./styles/main.css" />
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-        ScrollReveal({ reset: false });
-    </script>
-  </head>
-  <body>
-    <div id="container--main">
-      <section id="wrapper--hero" class="section--page">
-        <img
-          id="profile-pick"
-          src="./assets/images/pic_cv_new.png"
-          alt="Alex Bodrov smiles friendly asking for a job"
-        />
 
-        <div>
-          <h1 id="username">
-            Oleksandr Bodrov
-          </h1>
-          <p id="bio">
-            Hi there! I'm Alex, and I love building apps with React and TypeScript. Several enterprise projects under my belt, and I'm ready for more. Leading teams, Scrum mastering, and delivering top-notch products are things I tend to do. Besides regular Web Frontend, I'm also into FullStack development and React Native. Capable of both AWS or Google Cloud. Also a fan of MobX, React-Query, MUI, and Tailwind CSS. MongoDB and PostgreSQL are my go-to databases. I'm always open to new challenges and opportunities, so feel free to reach out!
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oleksandr Bodrov | Full Stack Developer</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <!-- Theme Toggle Button -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+    <i class="fas fa-moon" id="themeIcon"></i>
+  </button>
+
+  <div class="container">
+    <!-- Header Section -->
+    <header class="header" id="top">
+      <div class="profile-container">
+        <img src="./assets/images/face.png" alt="Oleksandr Bodrov" class="profile-image animate">
+        <div class="profile-content animate" style="animation-delay: 0.2s;">
+          <h1 class="name">Oleksandr Bodrov</h1>
+          <h2 class="title">Full Stack Developer</h2>
+          <p class="bio">
+            Hey there! I'm a passionate Full Stack Engineer with over 9 years in the field, working primarily with
+            React, Next.js, and Node.js. I love diving into platform engineering challenges—whether it's boosting
+            performance metrics or architecting scalable apps that users genuinely enjoy. Beyond the frontend, I work
+            extensively with GraphQL/REST APIs and have hands-on experience with Kubernetes and cloud infrastructure.
+            Having worn both the Scrum Master and team lead hats, I bring a blend of technical know-how and people
+            skills to every project I touch.
           </p>
-          <p>
-            <a href="mailto:oleksandr.bodrov@icloud.com">🤙 oleksandr.bodrov@icloud.com</a>
-          </p>
+          <div class="contact">
+            <a href="mailto:bodrovphone@gmail.com" class="contact-item">
+              <i class="fas fa-envelope contact-icon"></i>
+              <span>bodrovphone@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/oleksandr-bodrov-1b9566148/" target="_blank" class="contact-item">
+              <i class="fab fa-linkedin contact-icon"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/bodrovphone" target="_blank" class="contact-item">
+              <i class="fab fa-github contact-icon"></i>
+              <span>GitHub</span>
+            </a>
+          </div>
         </div>
-      </section>
+      </div>
 
-      <section class="section--page">
-        <div id="social--list">
-          <a href="./assets/Oleksandr_Bodrov_Senior_React_Developr.pdf" download target="_blank" class="always-active"> Download CV</a>
-          <a
-            href="https://www.linkedin.com/in/oleksandr-bodrov-1b9566148/"
-            target="_blank"
-          >
-            LinkedIn
-          </a>
-          <a href="https://t.me/oleksandr_bodrov" target="_blank"> Telegram</a>
-          <a href="https://github.com/bodrovphone" target="_blank"> GitHub</a>
-          <a href="https://www.instagram.com/bodrovphone" target="_blank">
-            Instagram
-          </a>
+      <!-- Navigation -->
+      <nav class="nav animate" style="animation-delay: 0.4s;">
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="./assets/cv_oleksandr.bodrov_2025.pdf" download class="nav-link"><i class="fas fa-download"></i>
+          Download CV</a>
+      </nav>
+    </header>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <h2 class="section-title animate">Professional Experience</h2>
+
+      <!-- Groupon Experience -->
+      <div class="card experience-card animate">
+        <div class="experience-header">
+          <div>
+            <h3 class="experience-title">Full Stack Developer – Platform Team</h3>
+            <p class="experience-company">Groupon | Prague, Cheh Republic</p>
+          </div>
+          <span class="experience-duration">10/2024 - 05/2025</span>
         </div>
-      </section>
-
-      <section class="section--page">
-        <h2>
-          Skills and Qualifications
-        </h2>
-        <ul id="qualifications--list">
-            <li>✅ Proven Expertise: <span>9 years of hands-on experience in front-end development, delivering consistent results.</span></li>
-            <li>✅ Architectural Mastery: <span>Extensive knowledge of front-end architectural paradigms, ensuring robust and scalable solutions.</span></li>
-            <li>✅ Effective Team Leadership: <span>Track record of successfully managing small-to-middle-sized teams, fostering collaboration and achieving project goals.</span></li>
-            <li>✅ Scrum Mastery: <span>Experience as a Scrum Master, facilitating seamless project execution and team coordination.</span></li>
-            <li>✅ Client-Centric Approach: <span>Strong focus on client and user satisfaction, tailoring solutions to meet their specific needs.</span></li>
-            <li>✅ UX/UI Sensibility: <span>A keen eye for user experience and interface design, ensuring the development of visually appealing and user-friendly applications.</span></li>
-            <li>✅ Quality Assurance: <span>Rigorous approach to quality assurance, implementing best practices to deliver robust and bug-free code.</span></li>
-            <li>✅ BDD/TDD: <span>Experience with Behavior-Driven and Test-Driven Development, ensuring the reliability and functionality of applications.</span></li>
+        <ul class="experience-list">
+          <li>Working on both frontend (Next.js, GraphQL) and backend (Node.js, GraphQL) to build and
+            optimize internal tools and systems</li>
+          <li>Migrated a major application from Next.js v14 to v15, ensuring smooth transition and compatibility</li>
+          <li>Used Google Web Vitals and custom telemetry to improve Core Web Vitals (CLS, LCP, FID, INP) by 10–24%,
+            bringing all KPIs into the green zone</li>
+          <li>Built dashboards and monitoring tools in Kibana, traced logs, and used AMD for profiling
+            and performance monitoring</li>
+          <li>Resolved complex issues like circular dependencies, security vulnerabilities, and created custom ESLint
+            rules
+            to enforce consistency and prevent regressions</li>
+          <li>Responded to critical incidents via PagerDuty, working with Kubernetes for monitoring and quick rollouts
+          </li>
+          <li>Explored new observability tools and optimized the linting and deployment pipelines</li>
+          <li>Participated in SEO improvements to support marketing and discoverability initiatives</li>
         </ul>
-      </section>
-
-      <section class="section--page">
-        <h2>
-          Tech Stack
-        </h2>
-
-        <div id="wrapper--stack__items">
-          <div class="card--techstack">
-            <span>TypeScript, JavaScript</span>
-          </div>
-
-          <div class="card--techstack">
-            <span>React, Next.js, Node.js</span>
-          </div>
-
-          <div class="card--techstack">
-            <span>RESTful API, GraphQL</span>
-          </div>
-
-          <div class="card--techstack">
-            <span>MongoDB, PostgreSQL</span>
-          </div>
-
-          <div class="card--techstack">
-            <span>MobX, Recoil.js</span>
-          </div>
-
-          <div class="card--techstack">
-            <span>MUI, Tailwind CSS, CSS Modules</span>
-          </div>
-
-          <div class="card--techstack">
-            <span>AWS Lambda, AWS S3, Docker</span>
-          </div>
-
-          <div class="card--techstack">
-            <span>Jenkins, GitHub Actions</span>
-          </div>
-
-          <div class="card--techstack">
-            <span>Jest, RTL, Sonar</span>
-          </div>
-
-          <div class="card--techstack">
-            <span>Context, Redux-toolkit</span>
-          </div>
-
-          <div class="card--techstack">
-            <span>Sliced, Features Architectures</span>
-          </div>
-
-          <div class="card--techstack">
-            <span>Scrum, Agile, Jira, Confluence</span>
-          </div>
-
-          <div class="card--techstack">
-            <span>React-Query, Apollo, Axios</span>
-          </div>
-
-          <div class="card--techstack">
-            <span>React-Virtualized, React-Window</span>
-          </div>
-
-          <div class="card--techstack">
-            <span>React-Router, TansTack Router</span>
-          </div>
-
-          <div class="card--techstack">
-            <span>Babel, Webpack, Vite</span>
-          </div>
-
-          <div class="card--techstack">
-            <span>GitHub Actions, Jenkins</span>
-          </div>
-
-          <div class="card--techstack">
-            <span>Stripe, YouTube, Instagram APIs</span>
-          </div>
-
-          <div class="card--techstack">
-            <span>React-Native, React Navigation</span>
-          </div>
-
-          <div class="card--techstack">
-            <span>Storybook, Chromatic</span>
-          </div>
-
-          <div class="card--techstack">
-            <span>Yoga, Prisma</span>
-          </div>
-
+        <div class="skills-list" style="margin-top: 1rem;">
+          <span class="skill-tag">Full Stack Developer</span>
+          <span class="skill-tag">Platform Team</span>
+          <span class="skill-tag">Performance Optimization</span>
         </div>
-      </section>
+      </div>
 
-      <section class="section--page" id="work-history-wrapper">
-        <h2>
-          Work History
-        </h2>
-        <div class="line-break"></div>
-        <div class="card--work-history">
-          <strong>🚧 Senior React Developer/Scrum Master</strong>
-          <p>
-            Almamedia | Tampere, Finland 
-          </p>
-          <p>
-            09/2022 - Present
-          </p>
-          <p>
-            <a href="https://www.ovipro.fi/en/" target="_blank">OviPro</a> Real Estate
-          </p>
-          <ul>
-            <li>Migrated to <a href="https://feature-sliced.design/" target="_blank">Featured Sliced Architecture</a>, which improved project maintenance and speed up development</li>
-            <li>Introduced new cache strategy with React-Query which improved performance, UX and reduced BE load by 20%</li>
-            <li>Updated MUI, React-Query, Date-Pickers dependencies on the project</li>
-            <li>Developed a few CLI tools, including nested type generation from Backend remote schema</li>
-            <li>Proactively participated on features design & prototyping</li>
-            <li>Improved unit tests coverage by 18%</li>
-            <li>Worked on Backend APIs</li>
-            <li>Managed Team as a Scrum Master</li>
-          </ul>
-
-          <div id="wrapper--stack__items">
-            <div class="card--techstack">
-              <span>Senior React Developer</span>
-            </div>
-
-            <div class="card--techstack">
-                <span>Middle Backend Developer</span>
-              </div>
-
-              <div class="card--techstack">
-                <span>Scrum Master</span>
-              </div>
-
-              <div class="card--techstack">
-                <span>~ 2 years</span>
-              </div>
-            </div>  
+      <!-- Almamedia Experience -->
+      <div class="card experience-card animate">
+        <div class="experience-header">
+          <div>
+            <h3 class="experience-title">Senior React Developer/Scrum Master</h3>
+            <p class="experience-company">Almamedia | Tampere, Finland</p>
+          </div>
+          <span class="experience-duration">09/2022 - 10/2024</span>
         </div>
-      </section>
-
-      <div class="line-break"></div>
-        <div class="card--work-history">
-          <strong>🚧 Senior React Developer</strong>
-          <p>Inditex | Arteixo, Spain</p>
-          <p>
-            09/2021 - 09/2022
-          </p>
-          <p>
-            <a href="https://static.inditex.com/annual_report_2016/en/our-priorities/sustainable-management-of-the-supply-chain/traceability-of-the-supply-chain.php" target="_blank">Corporate Traceability app</a>
-          </p>
-          <p>
-          </p>
-          <ul>
-            <li>Designing & implementing new features</li>
-            <li>Improved performance by 40% with memoization and lazy loading</li>
-            <li>Contributed on internal UI library</li>
-            <li>Implemented dozens of brand new utils and components for the corporate UI library</li>
-            <li>Co-authored internal code style guide</li>
-            <li>In-memory storage integration</li>
-            <li>Migrated unit tests from Enzyme to RTL</li>
-            <li>Collaborated on e2e tests integration (Cypress)</li>
-            <li>Hold public Demo of new features</li>
-          </ul>
-          
-
-          <div id="wrapper--stack__items">
-            <div class="card--techstack">
-              <span>Senior React Developer</span>
-            </div>
-
-            
-              <div class="card--techstack">
-                <span>Scrum Master</span>
-              </div>
-
-              <div class="card--techstack">
-                <span>~ 1 year</span>
-              </div>
-            </div>  
-
+        <p class="experience-description">
+          <a href="https://www.ovipro.fi/en/" target="_blank" style="color: var(--primary);">OviPro</a> Real Estate
+        </p>
+        <ul class="experience-list">
+          <li>Architected and maintained a large-scale React application for real estate management, focusing on
+            scalability and performance</li>
+          <li>Implemented Chromatic for visual regression testing, ensuring stability of shared UI component library
+            across the platform</li>
+          <li>Pioneered User Stories approach for task creation and specifications, improving clarity and alignment
+            between development and business needs</li>
+          <li>Developed custom CLI tools to auto-generate TypeScript types from OpenAPI specifications, reducing manual
+            work and potential errors</li>
+          <li>Optimized application rendering performance, resulting in 40% faster page load times and improved Core Web
+            Vitals</li>
+          <li>Led UI/UX improvements through close collaboration with design team, implementing responsive design
+            patterns</li>
+          <li>Improved unit test coverage by 18% while introducing more meaningful integration tests</li>
+          <li>Orchestrated agile ceremonies as Scrum Master, facilitating team productivity and removing blockers</li>
+        </ul>
+        <div class="skills-list" style="margin-top: 1rem;">
+          <span class="skill-tag">Senior React Developer</span>
+          <span class="skill-tag">Middle Backend Developer</span>
+          <span class="skill-tag">Scrum Master</span>
+          <span class="skill-tag">~2 years</span>
         </div>
-      </section>
+      </div>
 
-      <div class="line-break"></div>
-        <div class="card--work-history">
-          <strong>🚧 Fullstack Developer</strong>
-          <p>Bazaarvoice | Austin, TX</p>
-          <p>
-            06/2016 - 09/2021
-          </p>
-          <p>
-            <a a="https://www.bazaarvoice.com/products/social-commerce/" target="_blank">Galleries</a>, Social ECommerce Platform
-          </p>
-          <ul>
-            <li>Migration from BackBoneJS to React</li>
-            <li>Implemented of new API endpoints</li>
-            <li>Integration with Instagram, YouTube, Facebook APIs</li>
-            <li>Implemented of CSS Modules which helps to improve styling practices</li>
-            <li>Infrastructure Management with AWS Lambdas, CloudFront, S3 and EC2</li>
-            <li>Leaded the team of 3 developers</li>
-            <li>Cross-Functional Collaboration</li>
-            <li>Continuous Improvement Advocacy</li>
-          </ul>
-
-
-          <div id="wrapper--stack__items">
-            <div class="card--techstack">
-              <span>FullStack Developer</span>
-            </div>
-
-            <div class="card--techstack">
-                <span>Senior Front End Engineer</span>
-              </div>
-            
-              <div class="card--techstack">
-                <span>Team Lead</span>
-              </div>
-
-              <div class="card--techstack">
-                <span>~ 5 year</span>
-              </div>
-            </div>  
+      <!-- Inditex Experience -->
+      <div class="card experience-card animate">
+        <div class="experience-header">
+          <div>
+            <h3 class="experience-title">Senior React Developer</h3>
+            <p class="experience-company">Inditex | Arteixo, Spain</p>
+          </div>
+          <span class="experience-duration">09/2021 - 09/2022</span>
         </div>
-
-        <div class="line-break"></div>
-        <div class="card--work-history">
-          <strong>🚧 Software Engineer</strong>
-          <p>Bazaarvoice | Austin, TX</p>
-          <p>
-            08/2014 - 06/2016
-          </p>
-          <p>
-            <a a="https://www.bazaarvoice.com/products/social-commerce/" target="_blank">Ratings & Reviews</a>, Customers Feedback Platform
-          </p>
-          <ul>
-            <li>Technical Support for users</li>
-            <li>Troubleshooting</li>          
-            <li>Platform integration</li>          
-            <li>Features implementation</li>
-            <li>On-duty engineer to support for critical issues</li>
-            <li>Bug fixing</li>
-            <li>Refactoring of legacy components</li>
-          </ul>
-
-          <div id="wrapper--stack__items">
-            <div class="card--techstack">
-              <span>Senior Support Engineer</span>
-            </div>
-
-            <div class="card--techstack">
-                <span>Junior Web Developer</span>
-              </div>
-            
-    
-            </div>  
+        <ul class="experience-list">
+          <li>Developed key features for high-traffic eCommerce platform while maintaining strict company-wide standards
+            for code quality</li>
+          <li>Achieved and maintained 90%+ unit test coverage, adhering to rigorous testing protocols essential for
+            mission-critical retail systems</li>
+          <li>Collaborated with API team on data modeling and schema design, optimizing data flow between frontend and
+            backend systems</li>
+          <li>Implemented comprehensive Google Analytics integration to track user behavior and conversion metrics
+            across the platform</li>
+          <li>Designed and executed complex SQL queries for data analysis and reporting features</li>
+          <li>Built robust end-to-end testing suites with Cypress, ensuring seamless user journeys across multiple
+            touchpoints</li>
+          <li>Led technical demos for stakeholders, effectively communicating complex technical solutions to
+            non-technical audiences</li>
+          <li>Mentored junior developers through code reviews and pair programming sessions</li>
+        </ul>
+        <div class="skills-list" style="margin-top: 1rem;">
+          <span class="skill-tag">Senior React Developer</span>
+          <span class="skill-tag">Scrum Master</span>
+          <span class="skill-tag">~1 year</span>
         </div>
+      </div>
 
-
-      </section>
-
-      <section class="section--page">
-        <h2>Education & Contact Information</h2>
-
-        <div class="card--project">
-            <span>✴ Bachelor of Engineering. PSACEA, June 2012</span>
+      <!-- Bazaarvoice Experience (Fullstack) -->
+      <div class="card experience-card animate">
+        <div class="experience-header">
+          <div>
+            <h3 class="experience-title">Fullstack Developer</h3>
+            <p class="experience-company">Bazaarvoice | Austin, TX</p>
+          </div>
+          <span class="experience-duration">06/2016 - 09/2021</span>
         </div>
-
-        <div class="card--project">
-            <span>✴ Burgas, Bulgaria</span>
+        <p class="experience-description">
+          <a href="https://www.bazaarvoice.com/products/social-commerce/" target="_blank"
+            style="color: var(--primary);">Galleries</a>, Social ECommerce Platform
+        </p>
+        <ul class="experience-list">
+          <li>Migration from BackBoneJS to React</li>
+          <li>Implemented of new API endpoints</li>
+          <li>Integration with Instagram, YouTube, Facebook APIs</li>
+          <li>Implemented of CSS Modules which helps to improve styling practices</li>
+          <li>Infrastructure Management with AWS Lambdas, CloudFront, S3 and EC2</li>
+          <li>Leaded the team of 3 developers</li>
+          <li>Cross-Functional Collaboration</li>
+          <li>Continuous Improvement Advocacy</li>
+        </ul>
+        <div class="skills-list" style="margin-top: 1rem;">
+          <span class="skill-tag">FullStack Developer</span>
+          <span class="skill-tag">Senior Front End Engineer</span>
+          <span class="skill-tag">Team Lead</span>
+          <span class="skill-tag">~5 years</span>
         </div>
+      </div>
 
-        <div class="card--project">
-            <span>✴ Citizenship: Ukraine</span>
+      <!-- Bazaarvoice Experience (Software Engineer) -->
+      <div class="card experience-card animate">
+        <div class="experience-header">
+          <div>
+            <h3 class="experience-title">Software Engineer</h3>
+            <p class="experience-company">Bazaarvoice | Austin, TX</p>
+          </div>
+          <span class="experience-duration">08/2014 - 06/2016</span>
         </div>
-
-        <div class="card--project">
-            <span>✴ <a href="mailto:oleksandr.bodrov@icloud.com">oleksandr.bodrov@icloud.com</a></span>
+        <p class="experience-description">
+          <a href="https://www.bazaarvoice.com/products/social-commerce/" target="_blank"
+            style="color: var(--primary);">Ratings & Reviews</a>, Customers Feedback Platform
+        </p>
+        <ul class="experience-list">
+          <li>Technical Support for users</li>
+          <li>Troubleshooting</li>
+          <li>Platform integration</li>
+          <li>Features implementation</li>
+          <li>On-duty engineer to support for critical issues</li>
+          <li>Bug fixing</li>
+          <li>Refactoring of legacy components</li>
+        </ul>
+        <div class="skills-list" style="margin-top: 1rem;">
+          <span class="skill-tag">Senior Support Engineer</span>
+          <span class="skill-tag">Junior Web Developer</span>
         </div>
-
-        <div class="card--project">
-            <span>Linkedin - <a href="https://www.linkedin.com/in/oleksandr-bodrov-1b9566148/">https://www.linkedin.com/in/oleksandr-bodrov-1b9566148/</a></span>
-        </div>
-
+      </div>
     </section>
 
-    </div>
-  </body>
-  <script src="./js/main.js"></script>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2 class="section-title animate">Skills & Expertise</h2>
+
+      <div class="skills-container animate">
+        <div class="skill-category">
+          <h3 class="skill-category-title">Frontend</h3>
+          <div class="skills-list">
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">React-Query</span>
+            <span class="skill-tag">Apollo</span>
+            <span class="skill-tag">Axios</span>
+            <span class="skill-tag">React-Virtualized</span>
+            <span class="skill-tag">React-Window</span>
+            <span class="skill-tag">React-Router</span>
+            <span class="skill-tag">TanStack Router</span>
+            <span class="skill-tag">Storybook</span>
+            <span class="skill-tag">Chromatic</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category-title">Backend</h3>
+          <div class="skills-list">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">GraphQL</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Yoga</span>
+            <span class="skill-tag">Prisma</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category-title">Monitoring & Ops</h3>
+          <div class="skills-list">
+            <span class="skill-tag">Kibana</span>
+            <span class="skill-tag">Telegraf</span>
+            <span class="skill-tag">AMD</span>
+            <span class="skill-tag">PagerDuty</span>
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Google Cloud</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category-title">Tooling & Automation</h3>
+          <div class="skills-list">
+            <span class="skill-tag">ESLint</span>
+            <span class="skill-tag">Google Web Vitals</span>
+            <span class="skill-tag">CI/CD pipelines</span>
+            <span class="skill-tag">Performance Optimization</span>
+            <span class="skill-tag">SEO Optimization</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category-title">AI & Learning</h3>
+          <div class="skills-list">
+            <span class="skill-tag">Prompt engineering</span>
+            <span class="skill-tag">Replit</span>
+            <span class="skill-tag">Claude</span>
+            <span class="skill-tag">GPT-4</span>
+            <span class="skill-tag">Gemini</span>
+            <span class="skill-tag">DeepSeek</span>
+            <span class="skill-tag">WindSurf</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category-title">Qualifications</h3>
+          <div class="skills-list">
+            <span class="skill-tag">9+ years experience</span>
+            <span class="skill-tag">Team Leadership</span>
+            <span class="skill-tag">Scrum Master</span>
+            <span class="skill-tag">UX/UI Sensibility</span>
+            <span class="skill-tag">BDD/TDD</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects & Certifications Section -->
+    <section id="projects" class="section">
+      <h2 class="section-title animate">Projects & Ventures</h2>
+
+      <div class="projects-grid">
+        <div class="card project-card animate">
+          <div class="project-content">
+            <h3 class="project-title">CodeBurg – Founder & Community Builder</h3>
+            <p class="project-description">Founded and currently operating a physical coworking space in Burgas,
+              Bulgaria, dedicated to building a thriving community of developers. Created both the physical space and
+              digital presence, fostering collaboration and knowledge sharing among local tech professionals.</p>
+            <div class="project-tags">
+              <span class="project-tag">Community Building</span>
+              <span class="project-tag">Coworking Space</span>
+              <span class="project-tag">Tech Ecosystem</span>
+              <span class="project-tag">Entrepreneurship</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card animate">
+          <div class="project-content">
+            <h3 class="project-title">OBOD SOFT — AI-Powered Development Agency</h3>
+            <p class="project-description">Founded a boutique development agency specializing in AI-accelerated software
+              solutions. We deliver high-quality web applications with remarkably fast turnaround times and competitive
+              pricing by leveraging cutting-edge AI tools and my extensive development experience. Available for B2B
+              partnerships and ready to tackle challenging projects with flexible engagement models.</p>
+            <div class="project-tags">
+              <span class="project-tag">B2B Services</span>
+              <span class="project-tag">AI-Powered Development</span>
+              <span class="project-tag">Rapid Prototyping</span>
+              <span class="project-tag">Entrepreneurship</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card animate">
+          <div class="project-content">
+            <h3 class="project-title">AI Tools Exploration</h3>
+            <p class="project-description">Actively exploring and comparing modern AI tools and models, including
+              ChatGPT, Claude, Gemini, DeepSeek, Perplexity, WindSurf, and Replit Ghostwriter to deepen prompt
+              engineering skills and AI literacy.</p>
+            <div class="project-tags">
+              <span class="project-tag">AI Tools</span>
+              <span class="project-tag">Continuous Learning</span>
+              <span class="project-tag">Skill Development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <h2 class="section-title animate">Education & Contact</h2>
+
+      <div class="card education-card animate">
+        <h3 class="education-degree">Bachelor of Engineering</h3>
+        <p class="education-institution">PSACEA</p>
+        <p class="education-duration">Graduated: June 2012</p>
+      </div>
+
+      <div class="card animate" style="margin-top: 2rem;">
+        <h3 style="margin-bottom: 1rem; font-size: 1.25rem;">Contact Information</h3>
+        <p style="margin-bottom: 0.5rem;">Location: Burgas, Bulgaria</p>
+        <p style="margin-bottom: 0.5rem;">Citizenship: Ukraine</p>
+        <p style="margin-bottom: 0.5rem;">Email: <a href="mailto:bodrovphone@gmail.com"
+            style="color: var(--primary);">bodrovphone@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/oleksandr-bodrov-1b9566148/" target="_blank"
+            style="color: var(--primary);">https://www.linkedin.com/in/oleksandr-bodrov-1b9566148/</a></p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/oleksandr-bodrov-1b9566148/" target="_blank" class="social-link">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/bodrovphone" target="_blank" class="social-link">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://t.me/oleksandr_bodrov" target="_blank" class="social-link">
+          <i class="fab fa-telegram"></i>
+        </a>
+        <a href="https://www.instagram.com/bodrovphone" target="_blank" class="social-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <p>© 2025 Oleksandr Bodrov. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    // Theme Toggle Functionality
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const body = document.body;
+
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+      body.classList.add('light-mode');
+      themeIcon.classList.replace('fa-moon', 'fa-sun');
+    }
+
+    // Toggle theme
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('light-mode');
+
+      if (body.classList.contains('light-mode')) {
+        themeIcon.classList.replace('fa-moon', 'fa-sun');
+        localStorage.setItem('theme', 'light');
+      } else {
+        themeIcon.classList.replace('fa-sun', 'fa-moon');
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+
+    // Scroll Reveal Animation
+    document.addEventListener('DOMContentLoaded', () => {
+      const animatedElements = document.querySelectorAll('.animate');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      animatedElements.forEach(element => {
+        observer.observe(element);
+      });
+    });
+
+    // Active Navigation Link
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - 200) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(current)) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+
 </html>
