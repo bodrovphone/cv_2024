@@ -33,7 +33,7 @@
       <h2 class="title">Full Stack Developer</h2>
       
       <p class="bio">
-        Hey there! I'm a passionate Full Stack Engineer with over 9 years in the field, working primarily with
+        Hey there! I'm a passionate Full Stack Engineer with over <span id="yearsExperience">11</span> years in the field, working primarily with
         React, Next.js, and Node.js. I love diving into platform engineering challenges—whether it's boosting
         performance metrics or architecting scalable apps that users genuinely enjoy.
       </p>
@@ -72,7 +72,7 @@
       <div class="glass-card experience-item">
         <div class="exp-header">
           <div>
-            <h3 class="exp-title">Frontend / Fullstack Developer</h3>
+            <h3 class="exp-title">Frontend / Full Stack Developer</h3>
             <span class="exp-company">Skillo | Sofia, Bulgaria</span>
           </div>
           <span class="exp-date">09/2022 - 12/2025</span>
@@ -88,8 +88,8 @@
             <li>Architected large-scale React application for real estate management</li>
             <li>Implemented Chromatic for visual regression testing</li>
             <li>Pioneered User Stories approach for task creation</li>
-            <li>Developed custom CLI tools to auto-generate TypeScript types from OpenAPI</li>
-            <li>Optimized rendering performance, resulting in 40% faster page load times</li>
+            <li>Developed internal CLI tools to speed up to 40 minutes of daily work per developer</li>
+            <li>Performance optimization initiative, resulting in 25% faster page load times</li>
           </ul>
         </div>
 
@@ -97,7 +97,7 @@
           <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Vuokraovi</h4>
           <ul class="exp-list">
             <li>Led migration from legacy React codebase to Next.js with SSG for improved SEO</li>
-            <li>Implemented AWS infrastructure using CloudWatch, S3, and Lambda functions</li>
+            <li>Managing AWS infrastructure using CloudWatch, S3, and Lambda functions</li>
             <li>Optimized PostgreSQL queries and database performance</li>
             <li>Achieved significant improvements in Core Web Vitals and page load speeds</li>
           </ul>
@@ -116,14 +116,14 @@
       <div class="glass-card experience-item">
         <div class="exp-header">
           <div>
-            <h3 class="exp-title">Founder / Fullstack Engineer</h3>
+            <h3 class="exp-title">Founder / Full Stack Engineer</h3>
             <span class="exp-company">ObodSoft | Burgas, Bulgaria</span>
           </div>
           <span class="exp-date">10/2024 - Present</span>
           <span class="duration-chip">1 yr+</span>
         </div>
         <p class="exp-desc">
-          Software development agency specializing in B2B contracts for platform optimization and feature development. Leveraging modern AI-powered tools to accelerate delivery without compromising code quality.
+          Solo venture focused on building startups and taking on select B2B contracts. Leveraging modern AI-powered tools to accelerate delivery without compromising code quality.
         </p>
 
         <div style="margin-top: 1.5rem;">
@@ -159,7 +159,7 @@
       <div class="glass-card experience-item">
         <div class="exp-header">
           <div>
-            <h3 class="exp-title">React / Fullstack Developer</h3>
+            <h3 class="exp-title">React / Full Stack Developer</h3>
             <span class="exp-company">SoftServe | Dnipro, Ukraine</span>
           </div>
           <span class="exp-date">09/2014 - 09/2022</span>
@@ -191,7 +191,7 @@
 
         <div class="tags" style="margin-top: 1rem;">
           <span class="tag">React</span>
-          <span class="tag">FullStack</span>
+          <span class="tag">Full Stack</span>
           <span class="tag">AWS</span>
           <span class="tag">eCommerce</span>
           <span class="tag">Team Lead</span>
@@ -331,6 +331,15 @@
 
   <!-- JavaScript -->
   <script>
+    // Calculate years of experience (started Sept 2014)
+    try {
+      const startDate = new Date(2014, 8); // Sept 2014 (month is 0-indexed)
+      const years = Math.round((new Date() - startDate) / (365.25 * 24 * 60 * 60 * 1000));
+      document.getElementById('yearsExperience').textContent = years || 11;
+    } catch (e) {
+      // fallback already set in HTML
+    }
+
     // Theme Toggle
     const themeToggle = document.getElementById('themeToggle');
     const themeIcon = document.getElementById('themeIcon');
