@@ -1,548 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oleksandr Bodrov | Senior Software Engineer</title>
-  <meta name="description" content="Senior Software Engineer with 11+ years delivering performance-critical applications for GiveStar, Alma Media, Groupon, Inditex, and Bazaarvoice. Expert in React/Next.js optimization, CI/CD automation, AI-powered developer tooling (Anthropic API, Vercel AI SDK), and building scalable frontend architectures.">
-  <meta name="keywords" content="Senior Software Engineer, Senior Full Stack Engineer, React, Next.js, TypeScript, JavaScript, Node.js, AWS, GraphQL, PostgreSQL, MongoDB, Docker, Kubernetes, Team Lead, Scrum Master, Frontend Developer, Performance Optimization, Core Web Vitals, OpenAI, Anthropic API, Claude Code, Vercel AI SDK, AI Integration, AI Automation, Redux, RTK Query, MobX, Jest, Cypress, Playwright, REST API, CI/CD, GitLab CI/CD, Jenkins, GitHub Actions, PostHog, Sentry, MUI, Tailwind CSS, SEO, WCAG, Accessibility">
+  <title>Oleksandr Bodrov | Senior Software Engineer & Founder-Engineer</title>
+  <meta name="description" content="Senior software engineer and founder-engineer focused on AI products, agentic systems, system design, MCP integrations, and end-to-end product delivery.">
   <meta name="author" content="Oleksandr Bodrov">
-  <meta property="og:title" content="Oleksandr Bodrov - Senior Software Engineer CV">
-  <meta property="og:description" content="Senior Software Engineer with 11+ years delivering performance-critical applications. Expert in React/Next.js optimization, AI-powered tooling, and CI/CD automation.">
+  <meta property="og:title" content="Oleksandr Bodrov — Senior Software Engineer & Founder-Engineer">
+  <meta property="og:description" content="AI products, agentic systems, system design, and three products founded, built, and operated solo.">
   <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://alexbodrov.com/">
+  <link rel="canonical" href="https://alexbodrov.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-
 <body>
-  <!-- Background Blobs (shown only in light mode via CSS) -->
-  <div class="background-blobs">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-  </div>
+  <div class="atmosphere" aria-hidden="true"></div>
 
-  <!-- Theme Toggle -->
-  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
-    <i class="fas fa-sun" id="themeIcon"></i>
-  </button>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="container">
-    <!-- Header Section -->
-    <header class="header fade-in" id="top">
-      <div class="profile-image-container">
-        <img src="./assets/images/avatar_cv.jpg" alt="Oleksandr Bodrov" class="profile-image">
-      </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">Oleksandr Bodrov</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#experience">Experience</a>
+        <a href="#system-design">System Design</a>
+        <a href="#capabilities">Toolkit</a>
+        <a href="#projects">Products</a>
+      </nav>
+      <a class="btn btn-primary" href="./assets/CV_FS_oleksandr_bodrov_2026.pdf" download>Download PDF</a>
+    </div>
+  </header>
 
-      <h1 class="name">Oleksandr Bodrov</h1>
-      <h2 class="title">Senior Software Engineer</h2>
-
-      <p class="bio">
-        Senior Software Engineer with <span id="yearsExperience">11</span>+ years building performance-critical applications across enterprise and product companies. Currently at GiveStar, leading CI/CD automation, testing culture, and AI-powered developer tooling — including a multi-repo AI agent built with the Anthropic API that auto-resolves engineering tickets. Previously delivered 25% faster load times and 10-24% Core Web Vitals improvements for Alma Media (Finland's largest real estate platform) and Groupon (5M+ users). Integrates AI into real workflows: Anthropic API, Vercel AI SDK, OpenAI, PostHog, and feature flag systems. Founded ObodSoft, building AI-powered products including Trudify marketplace.
-      </p>
-
-      <div class="contact-links">
-        <a href="mailto:bodrovphone@gmail.com" class="contact-btn">
-          <i class="fas fa-envelope"></i> Email
-        </a>
-        <a href="https://www.linkedin.com/in/oleksandr-bodrov-1b9566148/" target="_blank" class="contact-btn">
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
-        <a href="https://github.com/bodrovphone" target="_blank" class="contact-btn">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-        <a href="./assets/CV_FS_oleksandr_bodrov_2026.pdf" download class="contact-btn">
-          <i class="fas fa-download"></i> Download CV
-        </a>
-      </div>
-    </header>
-
-    <!-- Top Navigation Bar -->
-    <nav class="top-nav fade-in">
-      <a href="#top" class="nav-name-btn">Oleksandr Bodrov</a>
-      <div class="nav-links">
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#education" class="nav-link">Education</a>
-      </div>
-    </nav>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section fade-in delay-2">
-      <h2 class="section-title">Professional Experience</h2>
-
-      <!-- MWS / GiveStar -->
-      <div class="glass-card experience-item">
-        <div class="exp-header">
-          <div>
-            <h3 class="exp-title">Senior Software Engineer</h3>
-            <span class="exp-company">GiveStar — Charity Platform (via MWS) | Sofia, Bulgaria</span>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Burgas, Bulgaria · Remote</p>
+          <h1>Oleksandr Bodrov</h1>
+          <p class="hero-title">Senior Software Engineer &amp; Founder-Engineer</p>
+          <p class="hero-lead">
+            I design and ship AI products, agentic systems, and multi-tenant platforms — combining deep React/Next.js product engineering with Python/FastAPI, system design, reliability, and security.
+          </p>
+          <p class="founder-note">Solo founder behind OhMyDesk, Trudify, and CodeBurg — all hands from product strategy and architecture to launch, users, and operations.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="./assets/CV_FS_oleksandr_bodrov_2026.pdf" download>Download CV (PDF)</a>
+            <a class="btn btn-ghost" href="mailto:bodrovphone@gmail.com">Email</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/oleksandr-bodrov" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn-ghost" href="https://github.com/bodrovphone" target="_blank" rel="noopener">GitHub</a>
           </div>
-          <span class="exp-date">01/2026 - Present</span>
-          <span class="duration-chip">Current</span>
         </div>
-        <p class="exp-desc">
-          Driving engineering excellence across multiple frontend repositories for GiveStar, a charity and fundraising platform. Spearheading CI/CD automation, testing culture, observability, and AI-powered developer tooling — delivering measurable impact within the first two months.
-        </p>
-
-        <ul class="exp-list" style="margin-top: 1rem;">
-          <li>Architected multi-repository AI agent with Anthropic API (headless Claude Code) that auto-resolves tickets from Slack/Linear, routing to the correct GitLab repo — potential to become a standalone AI product</li>
-          <li>Initiated PoC for AI-powered analytics pipeline with Vercel AI SDK, enriching custom reports with user-friendly UI — being positioned as a Pro feature for the GiveStar platform</li>
-          <li>Integrated GitLab CI/CD pipelines with code quality and security scanning tools across multiple frontend repositories</li>
-          <li>Bootstrapped unit testing culture from 0% to 25% coverage in the first two weeks; set up E2E testing with Playwright covering critical user paths across two projects</li>
-          <li>Automated release process via Linear webhooks triggering GitLab pipelines — cut release cycle time by 50% (40 min → 20 min), documented and presented to the team</li>
-          <li>Migrated legacy Axios data layer to RTK Query / SWR for optimized caching and server state management</li>
-          <li>Implemented automated TypeScript types generation with openapi-typescript CLI, eliminating manual type maintenance</li>
-          <li>Integrated PostHog feature flags for controlled rollouts and A/B testing capabilities</li>
-          <li>Built monitoring and alerting system with Uptrends & Sentry, integrated with Slack & Linear for incident routing to teams</li>
-          <li>Managed GitLab self-hosted and shared runners configuration for optimized pipeline execution</li>
-          <li>Leading bi-weekly Frontend Clan sessions sharing best practices, code quality standards, and process improvements</li>
-        </ul>
-
-        <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">
-          <strong>Tech Stack:</strong> React, TypeScript, GitLab CI/CD, Playwright, Anthropic API, Vercel AI SDK, RTK Query, PostHog, Sentry, Uptrends, Linear, openapi-typescript
-        </p>
-
-        <div class="tags" style="margin-top: 1rem;">
-          <span class="tag">Anthropic API</span>
-          <span class="tag">Vercel AI SDK</span>
-          <span class="tag">GitLab CI/CD</span>
-          <span class="tag">Playwright</span>
-          <span class="tag">PostHog</span>
-          <span class="tag">Sentry</span>
-          <span class="tag">RTK Query</span>
-        </div>
+        <figure class="hero-photo">
+          <img src="./assets/images/2026_avatar_round.png" alt="Portrait of Oleksandr Bodrov" width="320" height="320">
+        </figure>
       </div>
+    </section>
 
-      <!-- Skillo -->
-      <div class="glass-card experience-item">
-        <div class="exp-header">
-          <div>
-            <h3 class="exp-title">Senior Frontend Developer</h3>
-            <span class="exp-company">Skillo | Remote, Bulgaria</span>
+    <section class="section" id="experience">
+      <div class="wrap">
+        <header class="section-head">
+          <h2>Experience</h2>
+          <p>AI systems and product outcomes first; earlier enterprise delivery compressed below.</p>
+        </header>
+
+        <article class="role role-featured">
+          <div class="role-top">
+            <div>
+              <h3>Senior Software Engineer</h3>
+              <p class="company">GiveStar — charity &amp; fundraising platform (via MWS)</p>
+            </div>
+            <time datetime="2026-01">Jan 2026 – Present</time>
           </div>
-          <span class="exp-date">09/2022 - 12/2025</span>
-          <span class="duration-chip">3 yrs 3 mos</span>
-        </div>
-        <p class="exp-desc">
-          Led frontend development for Alma Media, Finland's largest real estate marketplace (100K+ daily users), managing property listing platforms across Nordic region.
-        </p>
-
-        <ul class="exp-list" style="margin-top: 1rem;">
-          <li>Migrated 50K+ LOC React codebase to Next.js 14, reducing build time by 40% and improving Core Web Vitals by 25%</li>
-          <li>Implemented Chromatic visual regression testing, catching 95% of UI bugs before production</li>
-          <li>Built internal CLI tool automating type generation workflows, saving 40 min/day per developer (200 dev-hours/month)</li>
-          <li>Integrated OpenAI API for automated property description generation, reducing content creation time by 60%</li>
-          <li>Managed AWS infrastructure (Lambda, S3, CloudWatch) supporting 100K+ daily users</li>
-        </ul>
-
-        <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">
-          <strong>Tech Stack:</strong> Next.js 14, TypeScript, React 18, AWS, Chromatic, OpenAI, MUI, Jest, RTL
-        </p>
-
-        <p style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-muted);">
-          Reference: <a href="https://www.linkedin.com/in/hannu-moijanen-2893b5/" target="_blank" style="color: var(--primary);">Hannu Moijanen</a>
-        </p>
-
-        <div class="tags" style="margin-top: 1rem;">
-          <span class="tag">React</span>
-          <span class="tag">Next.js</span>
-          <span class="tag">AWS</span>
-          <span class="tag">OpenAI</span>
-          <span class="tag">TypeScript</span>
-        </div>
-      </div>
-
-      <!-- Self-Employed -->
-      <div class="glass-card experience-item">
-        <div class="exp-header">
-          <div>
-            <h3 class="exp-title">Senior Full Stack Consultant (Part-time)</h3>
-            <span class="exp-company">Self-Employed | Burgas, Bulgaria</span>
-          </div>
-          <span class="exp-date">06/2024 - 12/2025</span>
-          <span class="duration-chip">1 yr 6 mos</span>
-        </div>
-        <p class="exp-desc">
-          Performance optimization consulting and B2C product development alongside full-time contract work. Clients ranged from high-growth startups to enterprise platforms.
-        </p>
-
-        <ul class="exp-list" style="margin-top: 1rem;">
-          <li>Optimized Groupon's 5M+ user platform: improved Core Web Vitals by 10-24% (LCP: 3.2s→1.9s), built ELK monitoring infrastructure, reduced API payloads 40% via GraphQL/Apollo caching, integrated Stripe/Apple Pay, optimized CI/CD (35% faster)</li>
-          <li>Built Trudify marketplace: AI-powered multilingual platform with DeepL translation, Stripe payments, Google Maps, Telegram Bot. Managed full lifecycle.</li>
-          <li>Developed Courtly booking platform: Admin panel and NestJS API for booking management</li>
-        </ul>
-
-        <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">
-          <strong>Tech Stack:</strong> Next.js, TypeScript, NestJS, Docker, Kubernetes, ELK, Stripe, DeepL
-        </p>
-
-        <div class="tags" style="margin-top: 1rem;">
-          <span class="tag">Next.js</span>
-          <span class="tag">NestJS</span>
-          <span class="tag">Docker</span>
-          <span class="tag">Kubernetes</span>
-          <span class="tag">Stripe</span>
-          <span class="tag">ELK</span>
-        </div>
-      </div>
-
-      <!-- SoftServe -->
-      <div class="glass-card experience-item">
-        <div class="exp-header">
-          <div>
-            <h3 class="exp-title">Full Stack Developer → Team Lead</h3>
-            <span class="exp-company">SoftServe | Dnipro, Ukraine</span>
-          </div>
-          <span class="exp-date">10/2014 - 09/2022</span>
-          <span class="duration-chip">8 yrs</span>
-        </div>
-        <p class="exp-desc">
-          Progressed from Full Stack Developer to Team Lead across multiple enterprise client projects. Collaborated with distributed teams globally.
-        </p>
-
-        <div style="margin-top: 1.5rem; padding-left: 1rem; border-left: 2px solid var(--primary);">
-          <h4 style="color: var(--primary); margin-bottom: 0.25rem;">Senior React Developer / Scrum Master - Inditex Supply Chain</h4>
-          <span style="font-size: 0.85rem; color: var(--text-muted);">03/2021 - 09/2022 (1 year 6 months)</span>
-          <p class="exp-desc" style="margin-top: 0.5rem;">Developed supply chain traceability for Inditex (Zara) tracking production across 50+ manufacturing facilities. Led Agile ceremonies as Scrum Master.</p>
-          <ul class="exp-list" style="margin-top: 0.75rem;">
-            <li>Built custom state management with JS Proxy API (transactions + rollbacks) solving drag-and-drop/backend sync issues</li>
-            <li>Migrated tests from Enzyme to React Testing Library (73% faster), achieved 95% SonarQube coverage</li>
-            <li>Contributed 20-30 components to internal design system (Figma, CSS Modules)</li>
+          <p class="role-summary">Led Claude-based agentic development and frontend technical improvements across GiveStar’s multi-repository product surface.</p>
+          <ul>
+            <li>Led a Claude-based agentic development program across nine repositories; 158 tickets processed and 114 reached production during a four-month rollout.</li>
+            <li>Architected governance for an LLM-maintained cross-repository knowledge base with 130+ curated pages, including repository routing, bounded handoffs, automated review rounds, human-takeover detection, allow-listed tools, and ticket eligibility rules.</li>
+            <li>Led a 35+ component React/Next.js design-system rollout to standardize product delivery across frontend repositories.</li>
+            <li>Raised unit-test coverage from 0% to about 35% across GiveStar’s frontend applications; built Playwright E2E from scratch on GitLab CI for two projects, covering critical user paths.</li>
           </ul>
-          <p style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-muted);"><strong>Tech Stack:</strong> React, Redux, PostgreSQL, JS Proxy API, CSS Modules, React Testing Library, Figma, SonarQube</p>
-        </div>
+          <p class="stack"><span>Stack</span> React · Next.js · TypeScript · Claude / Anthropic API · GitLab CI/CD · Playwright · PostHog · Sentry</p>
+        </article>
 
-        <div style="margin-top: 1.5rem; padding-left: 1rem; border-left: 2px solid var(--primary);">
-          <h4 style="color: var(--primary); margin-bottom: 0.25rem;">Team Lead - Curations Social Media Platform</h4>
-          <span style="font-size: 0.85rem; color: var(--text-muted);">01/2020 - 03/2021 (1 year 2 months)</span>
-          <p class="exp-desc" style="margin-top: 0.5rem;">Led team of 4 developers building social media aggregation platform for enterprise clients. Managed product lifecycle, sprint ceremonies, and stakeholder communication across US/Europe/Asia time zones.</p>
-          <ul class="exp-list" style="margin-top: 0.75rem;">
-            <li>Architected RESTful APIs with Node.js/Express integrating Facebook, Pinterest, Twitter, Instagram APIs for real-time content aggregation</li>
-            <li>Designed MongoDB schema for high-volume social data with efficient indexing and aggregation pipelines</li>
-            <li>Built customer-facing widgets and admin tools with React/Redux, implementing A/B testing and analytics</li>
+        <article class="role role-featured">
+          <div class="role-top">
+            <div>
+              <h3>Senior Software Engineer, AI Integrations &amp; MCP Platform</h3>
+              <p class="company">Viktor / Zeta AI — independent contract (~15–20 hrs/week)</p>
+            </div>
+            <time datetime="2026-04">Apr 2026 – Present</time>
+          </div>
+          <p class="role-summary">Owned production MCP integrations and shared-platform reliability — Python/FastAPI on Modal, OAuth hardening, multi-tenant security.</p>
+          <ul>
+            <li>Contributed across about 25 MCP integrations; owned seven end-to-end: Shopify, Meta Ads, Triple Whale, Modash, Jira, OpenRouter, and a financial API integration.</li>
+            <li>Built Python/FastAPI MCP servers on Modal with OAuth 2.0 or API-key auth; supported a broad integration surface including Hugging Face and Google Drive.</li>
+            <li>Fixed shared OAuth retry infrastructure — 72% fewer total MCP errors and 73% fewer dead-token failures in a measured 24-hour window.</li>
+            <li>Closed an over-broad default-permission gap in a multi-tenant financial integration; built a reusable YAML-driven MCP simulation/test harness.</li>
           </ul>
-          <p style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-muted);"><strong>Tech Stack:</strong> React, ExpressJS, MongoDB, Jenkins, Docker, AWS</p>
-        </div>
+          <p class="stack"><span>Stack</span> Python · FastAPI · Modal · OAuth 2.0 · MCP · OpenRouter · Hugging Face</p>
+        </article>
 
-        <div style="margin-top: 1.5rem; padding-left: 1rem; border-left: 2px solid var(--primary);">
-          <h4 style="color: var(--primary); margin-bottom: 0.25rem;">Front End Developer - Bazaarvoice Ratings & Reviews</h4>
-          <span style="font-size: 0.85rem; color: var(--text-muted);">10/2014 - 01/2020 (5 years 3 months)</span>
-          <p class="exp-desc" style="margin-top: 0.5rem;">Developed review and rating widgets for high-traffic eCommerce platforms serving major retail brands including Best Buy, Walmart, and Target.</p>
-          <ul class="exp-list" style="margin-top: 0.75rem;">
-            <li>Implemented SEO optimization (semantic HTML, JSON-LD schema, rich snippets) improving organic visibility by 25%</li>
-            <li>Developed WCAG 2.1 AA accessible components with WAI-ARIA best practices</li>
-            <li>Implemented comprehensive Google Analytics integration tracking user behavior, content engagement, and conversion funnels</li>
-            <li>Built customer-facing widgets and admin tools using React, Redux, and modern JavaScript (ES6+)</li>
+        <article class="role role-featured">
+          <div class="role-top">
+            <div>
+              <h3>Founder &amp; Product Engineer</h3>
+              <p class="company">OhMyDesk — AI-native coworking operations</p>
+            </div>
+            <time datetime="2025-11">Nov 2025 – Present · part-time</time>
+          </div>
+          <p class="role-summary">Founded, designed, built, launched, and operate a live AI-native coworking platform solo — safe agentic actions, grounding, and early operator adoption.</p>
+          <ul>
+            <li>Shipped OhMyDesk to about 30 workspace operators and 100 members with self-service plan access.</li>
+            <li>Built a multilingual AI Operator Autopilot (Gemini, Supabase Edge Functions, Postgres RLS, allow-listed tools) with propose → confirm → execute → audit for bookings, leads, payments, occupancy, and private-office actions.</li>
+            <li>Implemented grounded structured outputs, confidence and knowledge-gap logging, anti-injection controls, and a CI-linted knowledge base that blocks references to nonexistent product functionality.</li>
           </ul>
-          <p style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-muted);"><strong>Tech Stack:</strong> JavaScript, ES6, Backbone.js, React.js, HTML5, CSS, SEO</p>
-        </div>
+          <p class="stack"><span>Stack</span> Gemini · Supabase · PostgreSQL / RLS · Edge Functions · TypeScript / React</p>
+        </article>
 
-        <div class="tags" style="margin-top: 1rem;">
-          <span class="tag">React</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">MongoDB</span>
-          <span class="tag">Team Lead</span>
-          <span class="tag">Scrum Master</span>
-          <span class="tag">SEO</span>
+        <details class="earlier">
+          <summary>Earlier experience — Skillo, consulting, SoftServe</summary>
+
+          <article class="role">
+            <div class="role-top">
+              <div>
+                <h3>Senior Frontend Developer</h3>
+                <p class="company">Skillo — Alma Media (Finland’s largest real-estate marketplace)</p>
+              </div>
+              <time datetime="2022-09">Sep 2022 – Dec 2025</time>
+            </div>
+            <ul>
+              <li>Migrated 50K+ LOC React → Next.js 14 (~40% faster builds, ~25% better Core Web Vitals).</li>
+              <li>Chromatic visual regression (~95% UI regressions caught pre-prod); internal CLI saving ~40 min/day per developer.</li>
+              <li>OpenAI property-description generation (~60% faster content creation); AWS support for 100K+ daily users.</li>
+            </ul>
+          </article>
+
+          <article class="role">
+            <div class="role-top">
+              <div>
+                <h3>Senior Full Stack Consultant (part-time)</h3>
+                <p class="company">Independent · Burgas, Bulgaria</p>
+              </div>
+              <time datetime="2024-06">Jun 2024 – Dec 2025</time>
+            </div>
+            <ul>
+              <li>Groupon: Core Web Vitals ~10–24% better (LCP ~3.2s → ~1.9s); ~40% smaller API payloads via GraphQL/Apollo caching.</li>
+              <li>Developed the Courtly booking-platform admin panel and NestJS API for booking management and authentication.</li>
+            </ul>
+          </article>
+
+          <article class="role">
+            <div class="role-top">
+              <div>
+                <h3>Full Stack Developer → Team Lead</h3>
+                <p class="company">SoftServe · Dnipro, Ukraine</p>
+              </div>
+              <time datetime="2014-10">Oct 2014 – Sep 2022</time>
+            </div>
+            <p class="role-summary">Enterprise delivery across Inditex supply chain, Curations social platform, and Bazaarvoice ratings &amp; reviews — accessible, SEO-aware UIs and distributed Agile leadership.</p>
+            <ul>
+              <li><strong>Inditex:</strong> Proxy-based transactional state for complex DnD sync; 20–30 design-system components; Enzyme → RTL (~73% faster).</li>
+              <li><strong>Curations (Team Lead, 4):</strong> Node/Express social aggregation APIs; MongoDB for high-volume social data; React/Redux widgets with A/B testing.</li>
+              <li><strong>Bazaarvoice:</strong> SEO (JSON-LD, rich snippets) and WCAG 2.1 AA components for high-traffic retail widgets.</li>
+            </ul>
+          </article>
+        </details>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="system-design">
+      <div class="wrap">
+        <header class="section-head section-head-wide">
+          <p class="section-kicker">Architecture in production</p>
+          <h2>System Design</h2>
+          <p>Architecture is not a keyword here — each capability is backed by a shipped system.</p>
+        </header>
+        <div class="architecture-grid">
+          <article class="architecture-item">
+            <span class="architecture-index">01</span>
+            <h3>Multi-tenant integration platforms</h3>
+            <p>MCP servers, OAuth and API-key lifecycles, tenant isolation, permission models, retries, simulation, and production error reduction.</p>
+            <span class="evidence">Viktor / Zeta AI</span>
+          </article>
+          <article class="architecture-item">
+            <span class="architecture-index">02</span>
+            <h3>Governed agentic workflows</h3>
+            <p>Repository routing, bounded handoffs, review rounds, human takeover, allow-listed tools, and eligibility rules across nine repositories.</p>
+            <span class="evidence">GiveStar</span>
+          </article>
+          <article class="architecture-item">
+            <span class="architecture-index">03</span>
+            <h3>Safe AI product actions</h3>
+            <p>Grounded outputs, Postgres RLS, propose-confirm-execute-audit flows, injection controls, confidence logging, and operational feedback loops.</p>
+            <span class="evidence">OhMyDesk</span>
+          </article>
+          <article class="architecture-item">
+            <span class="architecture-index">04</span>
+            <h3>Scalable product architecture</h3>
+            <p>Large frontend migrations, API and cache design, high-volume social data, CI/CD, observability, accessibility, and performance engineering.</p>
+            <span class="evidence">Alma Media · Groupon · SoftServe</span>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section fade-in delay-3">
-      <h2 class="section-title">Skills & Expertise</h2>
-
-      <div class="skills-icon-grid">
-        <!-- Core Stack -->
-        <div class="skill-icon-card">
-          <span class="skill-icon" style="color: #3178C6; font-weight: 700; font-size: 1.8rem;">TS</span>
-          <span class="skill-label">TypeScript</span>
-        </div>
-        <div class="skill-icon-card">
-          <i class="fab fa-js skill-icon" style="color: #F7DF1E;"></i>
-          <span class="skill-label">JavaScript</span>
-        </div>
-        <div class="skill-icon-card">
-          <i class="fab fa-react skill-icon" style="color: #61DAFB;"></i>
-          <span class="skill-label">React</span>
-        </div>
-        <div class="skill-icon-card">
-          <i class="fab fa-react skill-icon" style="color: #000; filter: brightness(2);"></i>
-          <span class="skill-label">Next.js</span>
-        </div>
-        <div class="skill-icon-card">
-          <i class="fab fa-node-js skill-icon" style="color: #339933;"></i>
-          <span class="skill-label">Node.js</span>
-        </div>
-
-        <!-- Styling & UI -->
-        <div class="skill-icon-card">
-          <i class="fas fa-palette skill-icon" style="color: #0081CB;"></i>
-          <span class="skill-label">MUI</span>
-        </div>
-        <div class="skill-icon-card">
-          <i class="fab fa-css3-alt skill-icon" style="color: #06B6D4;"></i>
-          <span class="skill-label">Tailwind CSS</span>
-        </div>
-
-        <!-- State & Data -->
-        <div class="skill-icon-card">
-          <i class="fas fa-database skill-icon" style="color: #764ABC;"></i>
-          <span class="skill-label">Redux</span>
-        </div>
-        <div class="skill-icon-card">
-          <i class="fas fa-project-diagram skill-icon" style="color: #E10098;"></i>
-          <span class="skill-label">GraphQL</span>
-        </div>
-        <div class="skill-icon-card">
-          <i class="fas fa-exchange-alt skill-icon" style="color: #0EA5E9;"></i>
-          <span class="skill-label">REST</span>
-        </div>
-
-        <!-- Databases -->
-        <div class="skill-icon-card">
-          <i class="fas fa-database skill-icon" style="color: #336791;"></i>
-          <span class="skill-label">PostgreSQL</span>
-        </div>
-        <div class="skill-icon-card">
-          <i class="fas fa-leaf skill-icon" style="color: #47A248;"></i>
-          <span class="skill-label">MongoDB</span>
-        </div>
-        <div class="skill-icon-card">
-          <i class="fas fa-bolt skill-icon" style="color: #3ECF8E;"></i>
-          <span class="skill-label">Supabase</span>
-        </div>
-
-        <!-- Testing -->
-        <div class="skill-icon-card">
-          <i class="fas fa-vial skill-icon" style="color: #C21325;"></i>
-          <span class="skill-label">Jest</span>
-        </div>
-        <div class="skill-icon-card">
-          <i class="fas fa-flask skill-icon" style="color: #17202C;"></i>
-          <span class="skill-label">Cypress</span>
-        </div>
-        <div class="skill-icon-card">
-          <i class="fas fa-theater-masks skill-icon" style="color: #2EAD33;"></i>
-          <span class="skill-label">Playwright</span>
-        </div>
-
-        <!-- DevOps -->
-        <div class="skill-icon-card">
-          <i class="fab fa-docker skill-icon" style="color: #2496ED;"></i>
-          <span class="skill-label">Docker</span>
-        </div>
-        <div class="skill-icon-card">
-          <i class="fas fa-dharmachakra skill-icon" style="color: #326CE5;"></i>
-          <span class="skill-label">Kubernetes</span>
-        </div>
-        <div class="skill-icon-card">
-          <i class="fab fa-gitlab skill-icon" style="color: #FC6D26;"></i>
-          <span class="skill-label">GitLab CI/CD</span>
-        </div>
-        <div class="skill-icon-card">
-          <i class="fab fa-github skill-icon github-icon"></i>
-          <span class="skill-label">GitHub Actions</span>
-        </div>
-        <div class="skill-icon-card">
-          <i class="fab fa-jenkins skill-icon" style="color: #D24939;"></i>
-          <span class="skill-label">Jenkins</span>
-        </div>
-        <div class="skill-icon-card">
-          <i class="fab fa-aws skill-icon" style="color: #FF9900;"></i>
-          <span class="skill-label">AWS</span>
-        </div>
-
-        <!-- AI & Integrations -->
-        <div class="skill-icon-card">
-          <i class="fas fa-robot skill-icon" style="color: #D4A574;"></i>
-          <span class="skill-label">Anthropic API</span>
-        </div>
-        <div class="skill-icon-card">
-          <i class="fas fa-brain skill-icon" style="color: #00DC82;"></i>
-          <span class="skill-label">Vercel AI SDK</span>
-        </div>
-        <div class="skill-icon-card">
-          <i class="fas fa-robot skill-icon" style="color: #10A37F;"></i>
-          <span class="skill-label">OpenAI</span>
-        </div>
-        <div class="skill-icon-card">
-          <i class="fas fa-terminal skill-icon" style="color: #D4A574;"></i>
-          <span class="skill-label">Claude Code</span>
-        </div>
-        <div class="skill-icon-card">
-          <i class="fab fa-stripe skill-icon" style="color: #635BFF;"></i>
-          <span class="skill-label">Stripe</span>
-        </div>
-        <div class="skill-icon-card">
-          <i class="fas fa-chart-bar skill-icon" style="color: #F9BD2B;"></i>
-          <span class="skill-label">PostHog</span>
-        </div>
-
-        <!-- Observability -->
-        <div class="skill-icon-card">
-          <i class="fas fa-bug skill-icon" style="color: #362D59;"></i>
-          <span class="skill-label">Sentry</span>
-        </div>
-        <div class="skill-icon-card">
-          <i class="fas fa-chart-line skill-icon" style="color: #0EA5E9;"></i>
-          <span class="skill-label">Google Analytics</span>
-        </div>
-
-        <!-- Standards -->
-        <div class="skill-icon-card">
-          <i class="fas fa-universal-access skill-icon" style="color: #0054AE;"></i>
-          <span class="skill-label">WCAG</span>
-        </div>
-        <div class="skill-icon-card">
-          <i class="fas fa-search skill-icon" style="color: #47C5FB;"></i>
-          <span class="skill-label">SEO</span>
+    <section class="section" id="capabilities">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="section-kicker">Selected, not exhaustive</p>
+          <h2>Technical Toolkit</h2>
+          <p>Concrete tools behind the architecture and product outcomes above.</p>
+        </header>
+        <div class="cap-grid">
+          <article class="cap">
+            <h3>AI &amp; Agentic Systems</h3>
+            <p>Claude / Anthropic API · Gemini · OpenAI · OpenRouter · Hugging Face · MCP · agent orchestration · tool calling · grounding · guardrails · human-in-the-loop</p>
+          </article>
+          <article class="cap">
+            <h3>Frontend &amp; Product Engineering</h3>
+            <p>TypeScript · JavaScript · React · Next.js · Redux / RTK Query · React Query · SWR · MUI · Tailwind CSS · Storybook · Chromatic · Webpack · Vite</p>
+          </article>
+          <article class="cap">
+            <h3>Backend, APIs &amp; Data</h3>
+            <p>Python · FastAPI · Node.js · NestJS · PostgreSQL · MongoDB · Supabase · REST · GraphQL · OAuth 2.0 · OpenAPI</p>
+          </article>
+          <article class="cap">
+            <h3>Platform, Quality &amp; Reliability</h3>
+            <p>Modal · AWS · Docker · Kubernetes · GitLab CI/CD · GitHub Actions · Jenkins · Playwright · Cypress · Jest · React Testing Library · Sentry · PostHog · ELK</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section fade-in delay-4">
-      <h2 class="section-title">Projects & Ventures</h2>
-
-      <div class="projects-grid">
-        <div class="glass-card project-card">
-          <img src="./assets/images/trudify.webp" alt="Trudify marketplace screenshot" class="project-image" loading="lazy">
-          <h3 class="project-title"><a href="https://trudify.com" target="_blank" style="color: inherit; text-decoration: none;">Trudify</a></h3>
-          <p class="project-desc">Bulgarian services marketplace connecting customers with verified professionals for repairs, cleaning, moving, tutoring, and more. Free to use with verified profiles, ratings, and coverage across 8+ cities. Built with Next.js, Supabase, Stripe, and DeepL for multilingual support.</p>
-          <a href="https://trudify.com" target="_blank" class="project-link">trudify.com <i class="fas fa-external-link-alt"></i></a>
-          <div class="tags">
-            <span class="tag">Next.js</span>
-            <span class="tag">Supabase</span>
-            <span class="tag">Stripe</span>
-            <span class="tag">Marketplace</span>
-          </div>
-        </div>
-
-        <div class="glass-card project-card">
-          <img src="./assets/images/ohmydesk.webp" alt="OhMyDesk app screenshot" class="project-image" loading="lazy">
-          <h3 class="project-title"><a href="https://ohmydesk.app" target="_blank" style="color: inherit; text-decoration: none;">OhMyDesk</a></h3>
-          <p class="project-desc">Coworking space management software for operators. Visual calendars, real-time desk and meeting room booking, automatic allocation, waiting lists, and revenue tracking. Integrates with Stripe and Google Calendar.</p>
-          <a href="https://ohmydesk.app" target="_blank" class="project-link">ohmydesk.app <i class="fas fa-external-link-alt"></i></a>
-          <div class="tags">
-            <span class="tag">SaaS</span>
-            <span class="tag">React</span>
-            <span class="tag">Stripe</span>
-          </div>
-        </div>
-
-        <div class="glass-card project-card">
-          <img src="./assets/images/codeburg.webp" alt="CodeBurg coworking screenshot" class="project-image" loading="lazy">
-          <h3 class="project-title"><a href="https://codeburg.bg" target="_blank" style="color: inherit; text-decoration: none;">CodeBurg</a></h3>
-          <p class="project-desc">Tech-focused coworking space in Burgas, Bulgaria. Ergonomic workstations, high-speed internet, 24/7 access for members. Built for developers and digital nomads, with a community-first approach. Founded and operating the physical space and digital presence.</p>
-          <a href="https://codeburg.bg" target="_blank" class="project-link">codeburg.bg <i class="fas fa-external-link-alt"></i></a>
-          <div class="tags">
-            <span class="tag">Founder</span>
-            <span class="tag">Coworking</span>
-            <span class="tag">Community</span>
-          </div>
+    <section class="section" id="projects">
+      <div class="wrap">
+        <header class="section-head">
+          <h2>Projects</h2>
+          <p>Products and places I build and operate.</p>
+        </header>
+        <div class="projects">
+          <a class="project" href="https://ohmydesk.app" target="_blank" rel="noopener">
+            <img src="./assets/images/ohmydesk.webp" alt="OhMyDesk product screenshot" loading="lazy" width="640" height="400">
+            <div class="project-body">
+              <span class="project-role">Founder · Solo product engineer</span>
+              <h3>OhMyDesk</h3>
+              <p>AI-native coworking operations for operators — booking, payments, and an Operator Autopilot with human-confirmed actions.</p>
+              <span class="project-link">ohmydesk.app</span>
+            </div>
+          </a>
+          <a class="project" href="https://trudify.com" target="_blank" rel="noopener">
+            <img src="./assets/images/trudify.webp" alt="Trudify marketplace screenshot" loading="lazy" width="640" height="400">
+            <div class="project-body">
+              <span class="project-role">Founder · Solo full-stack engineer</span>
+              <h3>Trudify</h3>
+              <p>Multilingual services marketplace connecting customers with verified professionals across Bulgarian cities.</p>
+              <span class="project-link">trudify.com</span>
+            </div>
+          </a>
+          <a class="project" href="https://codeburg.bg" target="_blank" rel="noopener">
+            <img src="./assets/images/codeburg.webp" alt="CodeBurg coworking screenshot" loading="lazy" width="640" height="400">
+            <div class="project-body">
+              <span class="project-role">Founder · Solo builder &amp; operator</span>
+              <h3>CodeBurg</h3>
+              <p>Tech-focused coworking space in Burgas — community and workspace for developers and digital nomads.</p>
+              <span class="project-link">codeburg.bg</span>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="section fade-in delay-4">
-      <h2 class="section-title">Education</h2>
-      <div class="glass-card">
-        <div class="exp-header">
-          <div>
-            <h3 class="exp-title">Bachelor Degree in Civil Engineering</h3>
-            <span class="exp-company">PSACEA | Dnipro, Ukraine</span>
-          </div>
-          <span class="exp-date">2005 - 2009</span>
+    <section class="section section-alt" id="education">
+      <div class="wrap edu-grid">
+        <div>
+          <header class="section-head">
+            <h2>Education</h2>
+          </header>
+          <p class="edu-line"><strong>Bachelor’s in Civil Engineering</strong><br>PSACEA, Dnipro, Ukraine · 2005–2009</p>
+        </div>
+        <div>
+          <header class="section-head">
+            <h2>Certificates</h2>
+          </header>
+          <ul class="cert-list">
+            <li><a href="https://verify.skilljar.com/c/rgvr5wi9rakj" target="_blank" rel="noopener">Introduction to Model Context Protocol</a> — Anthropic, Apr 2026</li>
+            <li><a href="https://verify.skilljar.com/c/hsvbhgit4vtm" target="_blank" rel="noopener">Claude Code in Action</a> — Anthropic, Apr 2026</li>
+            <li><a href="https://verify.skilljar.com/c/pwa6w5pj77ee" target="_blank" rel="noopener">Introduction to Claude Cowork</a> — Anthropic, Apr 2026</li>
+          </ul>
         </div>
       </div>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer class="footer fade-in delay-4" style="text-align: center; padding: 2rem 0; color: var(--text-muted);">
-      <p>&copy; 2026 Oleksandr Bodrov. Obod Soft</p>
-    </footer>
-  </div>
-
-  <!-- JavaScript -->
-  <script>
-    // Calculate years of experience (started Sept 2014)
-    try {
-      const startDate = new Date(2014, 8); // Sept 2014 (month is 0-indexed)
-      const years = Math.round((new Date() - startDate) / (365.25 * 24 * 60 * 60 * 1000));
-      document.getElementById('yearsExperience').textContent = years || 11;
-    } catch (e) {
-      // fallback already set in HTML
-    }
-
-    // Theme Toggle - Default is dark, toggle to light
-    const themeToggle = document.getElementById('themeToggle');
-    const themeIcon = document.getElementById('themeIcon');
-    const body = document.body;
-
-    // Check saved theme
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'light') {
-      body.classList.add('light-mode');
-      themeIcon.classList.replace('fa-sun', 'fa-moon');
-    }
-
-    themeToggle.addEventListener('click', () => {
-      body.classList.toggle('light-mode');
-
-      if (body.classList.contains('light-mode')) {
-        themeIcon.classList.replace('fa-sun', 'fa-moon');
-        localStorage.setItem('theme', 'light');
-      } else {
-        themeIcon.classList.replace('fa-moon', 'fa-sun');
-        localStorage.setItem('theme', 'dark');
-      }
-    });
-
-    // Intersection Observer for Fade In
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: "0px 0px -50px 0px"
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.animationPlayState = 'running';
-          observer.unobserve(entry.target);
-        }
-      });
-    }, observerOptions);
-
-    document.querySelectorAll('.fade-in').forEach(el => {
-      // el.style.animationPlayState = 'paused'; // Optional: if you want to wait for scroll
-      // For now, we let them run immediately or use the delay classes
-    });
-
-    // Active Link Highlighting
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.nav-link');
-
-    window.addEventListener('scroll', () => {
-      let current = '';
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 300) {
-          current = section.getAttribute('id');
-        }
-      });
-
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').includes(current)) {
-          link.classList.add('active');
-        }
-      });
-    });
-  </script>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 Oleksandr Bodrov</p>
+      <a href="./assets/CV_FS_oleksandr_bodrov_2026.pdf" download>Download PDF CV</a>
+    </div>
+  </footer>
 </body>
 </html>

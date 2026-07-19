@@ -1,0 +1,303 @@
+/* ATS two-page A4 CV — technical editorial print system */
+@page {
+  size: A4;
+  margin: 12mm 13mm 12mm 13mm;
+}
+
+:root {
+  --ink: #121820;
+  --muted: #3d4a57;
+  --rule: #c5d0d4;
+  --accent: #0b5f6b;
+  --accent-soft: #e6f2f4;
+  --paper: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  font-size: 9.6pt;
+  line-height: 1.32;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.page {
+  width: 100%;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12pt;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 7pt;
+  margin-bottom: 8pt;
+}
+
+.header-text {
+  min-width: 0;
+  flex: 1;
+}
+
+.avatar {
+  flex: 0 0 78pt;
+  width: 78pt;
+  height: 78pt;
+  border-radius: 50%;
+  object-fit: contain;
+  border: 1.5pt solid var(--rule);
+  background: #fff;
+}
+
+.name {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 20pt;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--ink);
+}
+
+.headline {
+  margin-top: 2pt;
+  font-size: 11pt;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.01em;
+}
+
+.contact {
+  margin-top: 5pt;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2pt 10pt;
+  font-size: 8.6pt;
+  color: var(--muted);
+}
+
+.contact a {
+  color: var(--muted);
+}
+
+.contact span::before {
+  content: none;
+}
+
+/* Profile */
+.profile {
+  margin-bottom: 8pt;
+  color: var(--ink);
+  font-size: 9.4pt;
+  line-height: 1.38;
+}
+
+/* Skills */
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3pt 12pt;
+  margin-bottom: 9pt;
+  padding: 6pt 8pt;
+  background: var(--accent-soft);
+  border-left: 2.5pt solid var(--accent);
+}
+
+.skill-group {
+  font-size: 8.3pt;
+  line-height: 1.3;
+  color: var(--muted);
+}
+
+.skill-group strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 7pt;
+}
+
+.section-title {
+  font-size: 9pt;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border-bottom: 1px solid #b8c9ce;
+  padding-bottom: 2pt;
+  margin-bottom: 5pt;
+}
+
+.role {
+  margin-bottom: 7pt;
+  break-inside: avoid;
+}
+
+.role-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8pt;
+}
+
+.role-title {
+  font-size: 10pt;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.role-dates {
+  font-size: 8.4pt;
+  font-weight: 600;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.role-company {
+  font-size: 8.7pt;
+  color: var(--muted);
+  margin-top: 0.5pt;
+}
+
+.role-summary {
+  margin-top: 2.5pt;
+  font-size: 8.8pt;
+  color: var(--ink);
+  line-height: 1.32;
+}
+
+.role ul {
+  margin: 2.5pt 0 0 11pt;
+}
+
+.role li {
+  margin-bottom: 1.5pt;
+  font-size: 8.7pt;
+  line-height: 1.3;
+  color: var(--ink);
+}
+
+.stack {
+  margin-top: 2pt;
+  font-size: 7.9pt;
+  color: var(--muted);
+}
+
+.stack strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* SoftServe sub-roles */
+.subroles {
+  margin-top: 3pt;
+}
+
+.subrole {
+  margin-bottom: 3pt;
+}
+
+.subrole-title {
+  font-size: 8.6pt;
+  font-weight: 700;
+}
+
+.subrole-meta {
+  font-size: 7.9pt;
+  color: var(--muted);
+}
+
+.meta-block {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 8pt;
+  margin-top: 6pt;
+  break-inside: avoid;
+}
+
+.edu-title,
+.cert-title {
+  font-size: 9pt;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border-bottom: 1px solid #b8c9ce;
+  padding-bottom: 2pt;
+  margin-bottom: 4pt;
+}
+
+.edu-line,
+.cert-list li {
+  font-size: 8.6pt;
+  line-height: 1.35;
+}
+
+.cert-list {
+  margin-left: 11pt;
+}
+
+.page-break {
+  break-before: page;
+  page-break-before: always;
+}
+
+/* Screen preview helper */
+@media screen {
+  body {
+    background: #e8eef0;
+    padding: 24px;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto 24px;
+    padding: 12mm 13mm;
+    background: white;
+    box-shadow: 0 8px 30px rgba(18, 24, 32, 0.12);
+  }
+
+  .page-break {
+    break-before: unset;
+    page-break-before: unset;
+    border-top: 1px dashed #9bb;
+    padding-top: 12mm;
+    margin-top: 12mm;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+    padding: 0;
+  }
+
+  .page {
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+}
