@@ -14,22 +14,39 @@ trap cleanup EXIT
 "$CHROME" \
   --headless=new \
   --disable-gpu \
-  --disable-background-networking \
   --disable-component-update \
   --disable-sync \
   --no-first-run \
   --no-default-browser-check \
   --user-data-dir="$UD" \
   --no-pdf-header-footer \
+  --virtual-time-budget=8000 \
   --print-to-pdf="$TMP_OUT" \
   "file://${SRC}" &
 CHROME_PID=$!
 
+# Wait until Chrome has written a *complete* PDF, then stop it.
+# (`--headless=new` does not exit on its own after --print-to-pdf.)
+# Prefer pdfinfo when present; otherwise detect the %%EOF trailer plus a
+# stable file size — so no poppler/pdfinfo dependency is required.
 ready=false
-for _ in $(seq 1 120); do
-  if [[ -s "$TMP_OUT" ]] && pdfinfo "$TMP_OUT" >/dev/null 2>&1; then
-    ready=true
-    break
+prev_size=-1
+for _ in $(seq 1 240); do
+  if [[ -s "$TMP_OUT" ]]; then
+    if command -v pdfinfo >/dev/null 2>&1; then
+      if pdfinfo "$TMP_OUT" >/dev/null 2>&1; then
+        ready=true
+        break
+      fi
+    else
+      size=$(wc -c < "$TMP_OUT" | tr -d '[:space:]')
+      if [[ "$size" -gt 10000 && "$size" == "$prev_size" ]] \
+         && tail -c 2048 "$TMP_OUT" | grep -q '%%EOF'; then
+        ready=true
+        break
+      fi
+      prev_size="$size"
+    fi
   fi
   sleep 0.25
 done

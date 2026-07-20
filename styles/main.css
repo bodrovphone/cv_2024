@@ -432,6 +432,22 @@ body {
   color: var(--accent);
 }
 
+.role-ref {
+  margin-top: 0.55rem;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+
+.role-ref a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.role-ref a:hover {
+  text-decoration: underline;
+}
+
 /* Earlier experience disclosure */
 .earlier {
   margin-top: 1.5rem;
@@ -441,38 +457,24 @@ body {
   overflow: hidden;
 }
 
-.earlier summary {
-  cursor: pointer;
-  list-style: none;
-  padding: 1rem 1.15rem;
-  font-weight: 650;
-  color: var(--ink);
-  background: linear-gradient(90deg, var(--accent-soft), transparent 70%);
-  transition: background 0.2s var(--ease);
-}
-
-.earlier summary::-webkit-details-marker {
-  display: none;
-}
-
-.earlier summary::after {
-  content: "+";
-  float: right;
-  color: var(--accent);
+.earlier-head {
+  padding: 0.8rem 1.15rem;
+  font-size: 0.78rem;
   font-weight: 700;
-}
-
-.earlier[open] summary::after {
-  content: "–";
-}
-
-.earlier summary:hover {
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--accent);
   background: var(--accent-soft);
+  border-bottom: 1px solid var(--line);
 }
 
 .earlier .role {
   padding: 1.1rem 1.15rem;
   margin: 0;
+}
+
+.earlier .role:first-of-type {
+  border-top: none;
 }
 
 .earlier .role:last-child {
