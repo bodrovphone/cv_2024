@@ -3,7 +3,7 @@
 **Source of truth for:** ATS PDF (`cv/ats.html`) + portfolio HTML (`index.html`)
 **Aligned to:** `docs/plans/2026-07-17-cv-refresh-design.md`, `docs/plans/2026-07-19-founder-system-design-cv-refresh.md`
 **Status:** Shipped and live. This document reflects what is actually deployed, not a draft.
-**Last updated:** 2026-07-20
+**Last updated:** 2026-09-08
 
 All facts below are locked and match the committed HTML exactly. If you edit `index.html` or `cv/ats.html`, update this file in the same change — it is meant to stay in sync, not drift into history.
 
@@ -46,13 +46,15 @@ These are decisions, not defaults — violating them is a regression, not a styl
 
 ## Executive profile
 
-Senior software engineer and founding engineer with over a decade designing and shipping customer-facing products. Built and hardened production MCP integrations on multi-tenant platforms; architected governed agentic development systems, secure AI action workflows, and large-scale frontend applications. Founder of three products, combining system design and deep React/Next.js craft with Python/FastAPI platform engineering and end-to-end delivery.
+I introduced AI-assisted engineering at GiveStar by designing the orchestration agent, knowledge base, autonomous ticket-to-MR pipeline, and the measurement framework that tracked it in Linear and GitLab. Over four months post-rollout that system raised output per engineer 26% and cut development-stage cycle time 40%, while I also published the honest negative result: end-to-end lead time stayed flat at about 14 days because queueing outside the coding stage absorbed the gain.
+
+**Web:** those two sentences are the hero lead; a separate founder-note paragraph covers OhMyDesk / Trudify / CodeBurg.
+**PDF:** the same two sentences open the profile, then a short founder + TypeScript/React and Python/FastAPI closer for ATS keyword coverage.
 
 **Notes**
 
-- Tenure phrasing locked: "over a decade" (not `11+ years`).
-- "Built and hardened production MCP integrations on multi-tenant platforms" (not "Architected multi-tenant MCP platforms") — calibrated to match what the Viktor bullets actually support: owning integrations and hardening an existing shared platform, not architecting the platform itself.
-- Avoids prototype-as-product language and unverified ROI claims.
+- Metrics locked to the May 2026 AI rollout boundary and four-month post-rollout Linear+GitLab window; do not invent or round up.
+- Avoids prototype-as-product language and unverified ROI claims beyond the measured MR / cycle-time / quality figures below.
 
 ---
 
@@ -85,20 +87,32 @@ Python, FastAPI, Node.js, NestJS, PostgreSQL, MongoDB, Supabase, REST, GraphQL, 
 **Dates:** Jan 2026 – Present
 **Company line:** GiveStar, charity & fundraising platform (via MWS) | Sofia, Bulgaria / Remote
 **Placement:** Page 1 lead role (both PDF and web)
+**Official title:** Senior Software Engineer (via MWS). Do **not** retitle to Head of AI.
 
 **Role summary:**
-Led Claude-based agentic development and frontend technical improvements across GiveStar's multi-repository product surface: governance, knowledge systems, design-system rollout, and production AI-assisted workflows.
+Own GiveStar’s agentic / AI-assisted SDLC: designed the orchestration agent, cross-repo knowledge base, autonomous ticket-to-merge-request pipeline, and measurement framework across a brownfield estate (.NET, Next.js, React Native, GitLab CI, Linear) with ~14 engineers.
 
-**Bullets (4):**
+**Bullets (AI SDLC metrics first; KB governance retained):**
 
-1. Led a Claude-based agentic development program across nine repositories; 158 tickets processed and 114 reached production during a four-month rollout.
-2. Architected governance for an LLM-maintained cross-repository knowledge base with 130+ curated pages, including repository routing, bounded cross-repo handoffs, automated review rounds, human-takeover detection, allow-listed tools, and ticket eligibility rules.
-3. Led a 35+ component React/Next.js design-system rollout to standardize UI delivery across frontend repositories.
-4. Raised unit-test coverage from 0% to about 35% across GiveStar's frontend applications; built Playwright E2E from scratch on GitLab CI for two projects, covering critical user paths.
+1. Designed and built GiveStar’s AI-assisted SDLC (orchestration agent, cross-repo knowledge base, ticket-to-merge-request pipeline, and measurement framework) across a 14-engineer brownfield estate; merged code MRs per engineer rose 4.6 to 5.8 per week (+26%) with no headcount change, and team merged MRs rose +43%/wk (Linear story points +27%/wk).
+2. Cut development-stage cycle time 40% median (In Progress to code complete 3.3 to 2.0 days; p85 18 to 10 days) and ticket pickup time 54% (To Do to In Progress 4.6 to 2.1 days); QA on human tickets fell 2.8 to 1.3 days.
+3. Shipped AI-authored merge requests at 90% acceptance (Jun–Aug 2026) with 0% merging without review comments, while holding end-to-end lead time flat at ~14 days and MR-created-to-merged roughly steady (0.64 to 0.70 d median).
+4. Moved quality signals the right way under the same rollout: hotfix MRs -72%, review bounce-backs 33% to 27%, bug share of completed work 9% to 8%.
+5. Diagnosed that the 40% development-stage gain was absorbed by prioritisation and review/release queues (customer lead time unchanged) and framed that as the next system bottleneck rather than a finished win.
+6. Architected governance for an LLM-maintained cross-repository knowledge base with 130+ curated pages (repository routing, bounded handoffs, automated review rounds, human-takeover detection, allow-listed tools, ticket eligibility).
 
-**Stack (compact, once):** React, Next.js, TypeScript, Claude / Anthropic API, GitLab CI/CD, Playwright, PostHog, Sentry
+**Web-only extras (optional retain when space allows):**
 
-**Do not include:** 40→20 min release-cycle claim; GiveStar Pro AI analytics ownership; "fully operational for all complex planning paths"; speculative commercial-product framing.
+7. Led a 35+ component React/Next.js design-system rollout to standardize product delivery across frontend repositories.
+8. Raised unit-test coverage from 0% to about 35% across GiveStar’s frontend applications; built Playwright E2E from scratch on GitLab CI for two projects, covering critical user paths.
+
+**Stack (compact, once):** .NET, Next.js, React Native, TypeScript, Claude / Anthropic API, GitLab CI/CD, Linear, Playwright, PostHog, Sentry
+
+**Context (do not invent beyond):** AI rollout boundary 13 May 2026; four months post-rollout; Oct 2025–Sep 2026 Linear+GitLab window for baselines; same ~14 engineers.
+
+**Do not include:** 40→20 min release-cycle claim; GiveStar Pro AI analytics ownership; "fully operational for all complex planning paths"; speculative commercial-product framing; retitling to Head of AI; inventing or rounding metrics; leading with 158 tickets / 114 to prod as the primary proof (older ticket counts are secondary context only if needed elsewhere).
+
+**Web proof card (`#system-design` → Governed agentic SDLC):** Orchestration agent, cross-repo knowledge base, ticket-to-MR pipeline, and measurement framework. Four months post-rollout: +26% MRs per engineer and development-stage cycle time cut 40%; end-to-end lead time stayed flat at about 14 days.
 
 ---
 
@@ -128,7 +142,7 @@ Owned production MCP integrations and shared-platform reliability for Viktor: Py
 
 **Dates:** Independent · ongoing
 **Company line:** OhMyDesk · Trudify · CodeBurg | Burgas, Bulgaria / Remote
-**Placement:** Page 1, third role (PDF and web) — **not** page 2. Originally planned as a separate "OhMyDesk — Founder & Product Engineer" page-2 role plus a standalone portfolio-positioning section for Trudify/CodeBurg; those were merged into this single consolidated role so the founder story reads as one coherent block instead of being split and so it doesn't compete with GiveStar/Viktor for "Present"-dated real estate (this role uses "Independent · ongoing" instead of a date, deliberately).
+**Placement:** Page 2 lead role on the PDF (after GiveStar/Viktor on page 1); third role on the web Experience section — **not** competing with GiveStar for page-1 PDF real estate now that GiveStar leads with six measured AI SDLC bullets. Originally planned as a separate "OhMyDesk — Founder & Product Engineer" page-2 role plus a standalone portfolio-positioning section for Trudify/CodeBurg; those were merged into this single consolidated role so the founder story reads as one coherent block. Dates use "Independent · ongoing" instead of a calendar range, deliberately.
 
 **Role title evolution:** `Founder & Solo Product Engineer` → `Founder` → **`Founder & Product Engineer`** (current). "Solo" was cut per the style rule above. Plain "Founder" was tried but weakened the engineering signal in a title-only scan, so "Product Engineer" was added back.
 
@@ -273,10 +287,8 @@ Web-only `#projects` section — cards link out, no PDF equivalent.
 Header/nav → Hero (name, headline, lead, founder-note, CTAs) → Experience (GiveStar → Viktor → Founder & Product Engineer, all visible; then "Earlier experience" — Skillo → Consulting → SoftServe, **visible by default, not collapsed**) → System Design (4-card architecture-evidence grid) → Technical Toolkit (4 capability cards) → Projects (3 cards, real screenshots) → Education / Certificates → Footer.
 
 **PDF (`cv/ats.html` → `assets/CV_FS_oleksandr_bodrov_2026.pdf`, 2 pages):**
-- **Page 1:** Header (name, headline, contact) → Profile → Skills band (**single-column**, 4 rows) → GiveStar → Viktor → Founder & Product Engineer. All three current/ongoing roles fit on page 1 with room to spare.
-- **Page 2:** "Experience (continued)" → Skillo → Consulting → SoftServe (with 3 sub-role blocks) → Education / Certificates (**single-column** stacked block, not side-by-side).
-
-Founder role was originally planned for page 2; moved to page 1 during polish because page 1 had visible trailing whitespace after Viktor and the founder story reads better grouped with the other current work.
+- **Page 1:** Header (name, headline, contact) → Profile → Skills band (**single-column**, 4 rows) → GiveStar → Viktor. GiveStar now leads with measured AI SDLC outcomes (six bullets), so the Founder role returns to page 2 to keep the PDF two pages.
+- **Page 2:** "Experience (continued)" → Founder & Product Engineer → Skillo → Consulting → SoftServe (with 3 sub-role blocks) → Education / Certificates (**single-column** stacked block, not side-by-side).
 
 ---
 
